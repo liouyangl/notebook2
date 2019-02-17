@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<link rel="stylesheet" type="text/css" href="css/login.css">
+</head>
+<body>
+ 
+<div class="bigDiv">
+	<div class="picture"></div>
+	<div class="login">
+		<div class="log">
+			<img src="img3/1.png">
+			<b>登录</b>
+		</div>
+		<div class="log2">
+			<p>请输入您的登录数据</p>
+		</div>
+		<div class="log3">
+			<div class="log4">
+				<b>手机号码</b><br/>
+				<input type="text" id="num">
+			</div>
+			<div class="log4 log5">
+				<b>密码</b><br/>
+				<input type="text" id="password">
+			</div>
+			<div class="log6">
+				<a id="btnLogin" href="#"><b>登录</b></a>
+			</div>
+			<div class="log7">
+				<a href="#"><span>忘记密码？</span></a><br/>
+				<a href="#"><b>您还没有账户吗？</b></a>
+			</div>
+			<div class="log8">
+				<a href="register.html">立即注册</a>
+			</div>
+		</div>
+		<div class="foot">
+			<a href="#">访问条件 |</a>
+			<a href="#">Cookie |</a>
+			<a href="#">数据保护</a>
+		</div>
+	</div>
+</div>
+</body>
+</html>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/cookieTools.js"></script>
+<script type="text/javascript">
+function ajaxs(num,password){
+		$.post("login.php", {"num": num,"password":password},
+   			function(data){
+    			if(data==1){
+    				alert("登录成功");
+    				location.href="benz.html";
+    				
+					// $("#login").css("display","none");
+					// $(".register-header").css("display","none");
+					// $(".register-foot").css("display","block");
+    			}else if(data==0){
+    				alert("登录失败");
+    				location.href="register.html";
+    			}
+  			}, "json");
+	}
+
+$("#btnLogin").click(function(){
+	ajaxs($("#num").val(),$("#password").val());
+	saveCookie("num",$("#num").val(),7);
+});
+
+
+
+// $("#logins").click(function(){
+// 		logins($("#username").val(),$("#userpass").val());
+// 		if($("#login-cookie[type='checkbox']").prop('checked')==true){
+// 			saveCookie("username",$("#username").val(),7);
+// 			$("#uservip").text(getCookie("username"));
+// 		}
+// 	});
+
+
+</script>

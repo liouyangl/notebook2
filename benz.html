@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<title>Document</title>
+<link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+<link rel="stylesheet" type="text/css" href="css/benz.css">
+</head>
+<body> 
+<!-- header -->
+<header>   
+	<div class="header2">
+		<a href="#"><img src="img2/2.png"></a>
+		<div class="header3">
+			<a href="#">车型</a>
+			<a href="#">购车指南</a>
+			<a href="#">客户服务</a>
+			<a href="#">Mercedes me</a>
+			<a href="#">梅赛德斯-AMG</a>
+			<a href="#"><img class="img01" src="img2/3.png"></a>
+			
+		</div>
+		<div class="header4"> 
+			<div class="head">
+				<a id="log" href="login.html">登录</a>
+				<a id="log2" href="register.html">注册</a>
+			</div>
+			<div class="head2">
+				<i>您好</i><b id="log3">xxx</b>
+				<a class="head3" href="#">登出</a>
+			</div>
+		</div>
+	</div>
+</header>
+<!-- banner -->
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+        	<a href="#"><img src="img/2.jpg" alt=""/></a>
+        </div>
+        <div class="swiper-slide">
+        	<a href="#"><img src="img/3.jpg" alt=""/></a>
+        </div>
+        <div class="swiper-slide">
+        	<a href="#"><img src="img/4.jpg" alt=""/></a>
+        </div>
+          <div class="swiper-slide">
+        	<a href="#"><img src="img/5.jpg" alt=""/></a>
+        </div>
+          <div class="swiper-slide">
+        	<a href="#"><img src="img/6.jpg" alt=""/></a>
+        </div>
+    </div>
+    <!-- 如果需要分页器 -->
+    <div class="swiper-pagination"></div>
+    
+    <!-- 如果需要导航按钮 -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+    
+    <!-- 如果需要滚动条 -->
+   <!--  <div class="swiper-scrollbar"></div> -->
+ 
+</div>
+<script type="text/javascript" src="js/swiper.min.js"></script>
+<script type="text/javascript">
+	var mySwiper = new Swiper ('.swiper-container', {
+    direction: 'horizontal', // 垂直切换选项
+    loop: true, // 循环模式选项
+    speed:1000,
+    autoplay: {
+		delay: 2000,
+		stopOnLastSlide: false,
+		disableOnInteraction: false,
+    },
+    // 如果需要分页器
+    pagination: {
+      el: '.swiper-pagination',
+       clickable :true,
+    },
+    
+    // 如果需要前进后退按钮
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    }
+    
+    // 如果需要滚动条
+    // scrollbar: {
+    //   el: '.swiper-scrollbar',
+    // },
+  })        
+
+
+
+</script>
+ <!-- <div class='silder-box silder-box-1'>
+	<div class='silder'>
+		<ul>
+			<li>
+				<a href="#"><img src="img/2.jpg"></a>
+			</li>
+			<li>
+				<a href="#"><img src="img/3.jpg"></a>
+			</li>
+			<li>
+				<a href="#"><img src="img/4.jpg"></a>
+			</li>
+			<li>
+				<a href="#"><img src="img/5.jpg"></a>
+			</li>
+			<li>
+				<a href="#"><img src="img/6.jpg"></a>
+			</li>
+		</ul>
+	</div>
+	<div class='silder-button btl'></div>
+	<div class='silder-button btr'></div>
+</div> -->
+<!-- section -->
+<section>
+	<div class="section2">
+		<div class="section3">
+			<img src="img2/9.png">
+			<span>全部车型</span>
+			<img src="img2/9.png">
+		</div>
+		<div class="section4">
+			<img src="img/7.jpg">
+			<div class="section5">
+				<div class="sec">
+					<img src="img3/23.png">
+					<span>轿车</span>
+				</div>
+			</div>
+			<div class="section5 section6">
+				<div class="sec">
+					<img src="img3/23.png">
+					<span>SUV</span>
+				</div>
+			</div>
+			<div class="section5 section7">
+				<div class="sec">
+					<img src="img3/23.png">
+					<span>轿跑车&<br/>敞篷跑车</span>
+				</div>
+			</div>
+			<div class="section5 section8">
+				<div class="sec">
+					<img src="img3/23.png">
+					<span>MPV</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- tools -->
+<div class="tools">
+	<div class="section3">
+			<img src="img2/9.png">
+			<span>购车工具</span>
+			<img src="img2/9.png">
+	</div>
+	<div class="tools2">
+		<a href="#"><img src="img2/12.png" alt=""><br/><span>查找经销商</span></img></a>
+		<a href="#"><img src="img2/13.png" alt=""><br/><span>车型比较</span></img></a>
+		<a href="#"><img src="img2/14.png" alt=""><br/><span>预约试驾</span></img></a>
+		<a href="product list.html"><img src="img2/15.png" alt=""><br/><span>在线购车</span></img></a>
+	</div>
+</div>
+<!-- finder -->
+<div class="finder">
+	<div class="section3">
+			<img src="img2/9.png">
+			<span>发现更多</span>
+			<img src="img2/9.png">
+	</div>
+</div>
+<!-- picture -->
+<div class="picture">   
+	<div class="pic">
+		<a href="#"><img src="img/9.jpg"></a>
+		<div class="word2">限时购车新方案</div>
+		<div class="word"><p>多种优享方案，<br/>助你轻松拥有一辆梅赛德斯-奔驰。</p>
+			<span>&gt  了解更多</span>
+		</div>
+		<div class="bigDiv"></div>
+	</div>
+	<div class="pic2">
+		<div class="pic3">
+			<a href="#"><img class="img03" src="img/8.jpg"></a>
+			<div class="word2">加入She`s Mercedes</div>
+			<div class="word"><p>发出你的声音，唤醒女性力量</p>
+			<span>&gt  了解更多</span>
+			</div>
+			<div class="bigDiv"></div>
+		</div>
+		<div class="pic4">
+			<a href="#"><img class="img02" src="img/10.jpg"></a>
+			<div class="word2">星友荟</div>
+			<div class="word"><p>尽情表达自我、分享观点、结识新友<br/>的星社群徽</p>
+			<span>&gt  了解更多</span>
+			</div>
+			<div class="bigDiv"></div>
+		</div>
+		
+	</div>
+	
+</div>
+<!-- center -->
+<div class="center">
+	<div class="cen">
+		<img src="img/11.jpg">
+		<div class="cen2">
+			<p>预约试驾</p>
+			<b>亲身体验梅赛德斯-奔驰吧。</b><br/>
+			<a href="#"><span>&gt  开始</span></a>
+		</div>
+	</div>
+</div>
+<div class="center2"> 
+	<b>分享到</b>
+	<a href="#"><img src="img2/19.png" alt=""></a>
+	<a href="#"><img src="img2/20.png" alt=""></a>
+</div>
+<!-- footer -->
+<footer>
+	<div class="footer2">
+		<div class="footer3">
+			<ul>
+				<a href="#"><li class="lis">车型</li></a>
+				<a href="#"><li>轿车</li></a>
+				<a href="#"><li>suv</li></a>
+				<a href="#"><li>轿跑车和敞篷跑车</li></a>
+				<a href="#"><li>mpv</li></a>
+1.866667rema href="#"><li>EQC</li></a>
+				<a href="#"><li>车型总览</li></a>
+			</ul>
+		</div>
+		<div class="footer3">
+			<ul>
+				<a href="#"><li class="lis">购车指南</li></a>
+				<a href="#"><li>在线购车</li></a>
+				<a href="#"><li>限时购车新方案</li></a>
+				<a href="#"><li>查找经销商</li></a>
+				<a href="#"><li>金融计算器</li></a>
+				<a href="#"><li>预约试驾</li></a>
+				<a href="#"><li>下载产品手册</li></a>
+				<a href="#"><li>车型比较</li></a>
+			</ul>
+		</div>
+		<div class="footer3">
+				<ul>
+				<a href="#"><li class="lis">客户服务</li></a>
+				<a href="#"><li>星徽保养菜单</li></a>
+				<a href="#"><li>原厂修养套餐家族</li></a>
+				<a href="#"><li>手机端服务体验</li></a>
+				<a href="#"><li>原厂配件</li></a>
+				<a href="#"><li>事故与保险服务</li></a>
+				<a href="#"><li>24小时道路救援</li></a>
+				<a href="#"><li>召回通知</li></a>
+				<a href="#"><li class="lis2">留学回国人员购车业务</li></a>
+				<a href="#"><li>金融服务</li></a>
+			</ul>
+		</div>
+		<div class="footer3">
+			<ul>
+				<a href="#"><li class="lis">奔驰天下</li></a>
+				<a href="#"><li>品牌介绍</li></a>
+				<a href="#"><li>Mercedes me</li></a>
+				<a href="#"><li>星友荟</li></a>
+				<a href="#"><li>奔驰杂志</li></a>
+				<a href="#"><li>奔驰新闻</li></a>
+				<a href="#"><li>奔驰驾驶学院</li></a>
+				<a href="#"><li>企业社会责任</li></a>
+				<a href="#"><li>供应商信息平台</li></a>
+				<a href="#"><li>环保信息查询</li></a>
+			</ul>
+		</div>
+	</div>
+</footer>
+<!-- foot -->
+<div class="foot">
+	<div class="foot2">
+		<div class="foot3">其他奔驰网站</div>
+		<div class="foot4">
+			<a href="#">Mercedes me</a>
+			<a href="#">星睿认证二手车</a>
+			<a href="#">She`s Mercedes</a>
+			<a href="#">金融服务</a>
+		</div>
+	</div>
+</div>
+<div class="foot5">
+	<div class="foot6">
+		<div class="foot3">关注我们</div>
+		<div class="foot7">
+			<a href="#">
+				<img class="img04" src="img3/19.png" alt="">
+				<img class="img03" src="img3/20.png" alt="">
+			</a>
+			<a href="#">
+				<img class="img04" src="img3/17.png" alt="">
+				<img class="img03" src="img3/18.png" alt="">
+			</a>
+			<a href="#">
+				<img class="img04" src="img3/21.png" alt="">
+				<img class="img03" src="img3/22.png" alt="">
+			</a>
+		</div>
+	</div>
+</div>
+<!-- end -->
+<div class="end">
+	<div class="end2">
+		<a href="#">&copy 2018 北京梅赛德斯-奔驰销售服务有限公司 版权所有</a>
+		<a href="#">网站地图</a>
+		<a href="#">隐私条款</a>
+		<a href="#">京ICP备09046804号-2</a>
+		<a href="#">法律声明</a>
+		<a href="#">京公网安备11010502035702号</a>
+	</div>
+</div>
+<!-- contact -->
+<div class="contact">
+	<a href="#"><img src="img2/24.png" alt=""></a>
+</div>
+
+
+	
+</body>
+</html>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/mySystem.js"></script>
+<script type="text/javascript" src="js/cookieTools.js"></script>
+<!-- <script type="text/javascript" src="js/mover1809.js"></script>
+<script type="text/javascript" src="js/benz.js"></script> -->
+<script type="text/javascript">
+
+
+window.onload = function(){
+	// getCookie("num");
+	if(getCookie("num")!=null){
+		$("#log3").html(getCookie("num"));
+		$(".head2").css("display","block");
+		$(".head").css("display","none");
+	}
+	$(".head3").click(function(){
+		$(".head2").css("display","none");
+		$(".head").css("display","block");
+		removeCookie("num");
+	});
+	
+}
+</script>	
+ 
+
+
+
+
